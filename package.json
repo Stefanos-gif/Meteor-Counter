@@ -9,7 +9,7 @@
 	},
 	"scripts": {
 		"postinstall": "prisma generate",
-    	"vercel-build": "prisma migrate deploy && vite build",
+		"vercel-build": "prisma migrate deploy && vite build",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
