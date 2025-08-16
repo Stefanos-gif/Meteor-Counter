@@ -4,18 +4,15 @@
 	"version": "0.0.1",
 	"type": "module",
 	 "engines": {
-    "node": "22.x",
+    "node": ">=18 <23",
     "npm": "11.x"
 	 },
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"prepare": "svelte-kit sync || echo ''",
+		"build": "svelte-kit build",
+		"preview": "svelte-kit preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "eslint . && prettier --check .",
-		"format": "prettier --write ."
+		"prepare": "svelte-kit sync || echo ''"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
