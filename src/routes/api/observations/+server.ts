@@ -2,6 +2,7 @@ import type { RequestHandler } from './$types';
 import { json } from '@sveltejs/kit';
 import db from '$lib/db';
 import { observationBodySchema } from '$lib/validation/observation';
+export const config = { runtime: 'nodejs' };
 
 function badRequest(message: string, status = 400) {
   return new Response(JSON.stringify({ error: message }), {

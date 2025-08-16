@@ -1,9 +1,0 @@
--- CreateTable
-CREATE TABLE "Observation" (
-    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-    "name" TEXT NOT NULL,
-    "meteors" INTEGER NOT NULL,
-    "minutes" REAL NOT NULL,
-    "rate" REAL NOT NULL,
-    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
-);
