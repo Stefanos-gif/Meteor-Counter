@@ -8,7 +8,7 @@
 </svelte:head>
 
 <div class="page">
-    <div aria-hidden class="backdrop">
+    <div aria-hidden=true class="backdrop">
         <div class="grad"></div>
         <div class="radial"></div>
     </div>
